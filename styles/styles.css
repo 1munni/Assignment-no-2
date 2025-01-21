@@ -108,10 +108,19 @@ color:  var(--secondary-color);
   /* Standard Curriculum section start */
   .Curriculum{
     background-image: url(../assets/bg.png);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 .curriculum-title{
   font-weight: 700;
   font-size: 2.75rem;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.Curriculum-boxes{
+  margin: 0 auto;
+  gap: 30px;
 }
 .card-1{
   flex-direction: column;
@@ -123,6 +132,30 @@ color:  var(--secondary-color);
   border-radius: 5px;
   margin: 0 auto;
   background-image: linear-gradient(#DEF6FF, #ffffff, #ffffff);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+.card-2{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 300px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  margin: 0 auto;
+  background-image: linear-gradient(#FFF4DC, #ffffff, #ffffff);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+.card-3{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 300px;
+  border: 1px solid var(--third-color);
+  border-radius: 5px;
+  margin: 0 auto;
+  background-image: linear-gradient(#F2E8FF, #ffffff, #ffffff);
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
 }
 .card-details{
@@ -145,7 +178,30 @@ color:  var(--secondary-color);
 }
 .card-details a{
   text-decoration: none;
-  color: #05D4DF;
+  /* color: #05D4DF; */
+}
+.arrow-1{
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 10px;
+}
+.arrow-1:hover {
+  background-color: var(--secondary-color);
+  color: var(--dark1);
+}
+.arrow-2{
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 10px;
+}
+.arrow-2:hover {
+  background-color: var(--secondary-color);
+  color: var(--dark1);
+}
+.arrow{
+  gap: 10px;
+  margin-top: 20px;
+  color: var(--fifth-color);
 }
 
 
@@ -153,7 +209,8 @@ color:  var(--secondary-color);
   @media screen and (max-width:576px){
     .school-text,
     .nav-design,
-    .contact-btn{
+    .contact-btn,
+    .arrow{
       display: none;
     }
     .manu-icon{
@@ -172,8 +229,13 @@ margin: 20px;}
     }
     .banner-heading{
       font-size: 2rem;
-    }}
-    /* .banner-img{
-     
     }
-   */
+    /* Curriculum-section */
+    .Curriculum-boxes{
+      display: grid;
+      grid-template-columns: repeat(3 1fr);
+    }
+    .curriculum-title{
+      text-align: center;
+    }}
+  
