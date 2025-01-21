@@ -77,7 +77,7 @@ color:  var(--secondary-color);
   }
   /* navbar design end  */
   /* banner-design start */
-  .banner{
+  .banner-design{
     justify-content: center;
     align-items: center;
     margin: 20px 100px;
@@ -100,8 +100,56 @@ color:  var(--secondary-color);
     color: var(--fifth-color);
     border: none;
     border-radius: 10px;
-    padding:5px 20px;
+    padding:7px 25px;
+    font-size: 1.20rem;
+    font-weight: 600;
   }
+  
+  /* Standard Curriculum section start */
+  .Curriculum{
+    background-image: url(../assets/bg.png);
+  }
+.curriculum-title{
+  font-weight: 700;
+  font-size: 2.75rem;
+}
+.card-1{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 300px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  margin: 0 auto;
+  background-image: linear-gradient(#DEF6FF, #ffffff, #ffffff);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+.card-details{
+ text-align: center;
+ margin: 20px;
+ justify-content: center;
+}
+.card-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark1);
+  
+}
+.card-text{
+  font-size: .90rem;
+  font-weight: 500;
+  color: var(--dark2);
+  padding: 25px;
+  padding-bottom: 25px;
+}
+.card-details a{
+  text-decoration: none;
+  color: #05D4DF;
+}
+
+
+  /* responsive style */
   @media screen and (max-width:576px){
     .school-text,
     .nav-design,
@@ -112,9 +160,20 @@ color:  var(--secondary-color);
       display: block;
     }
     .nav-bar{
-      display: flex;
+    display: flex;
      justify-content: space-between;
      margin: 12px 16px;
     }
+    .banner-design{
+      flex-direction: column-reverse;
+margin: 20px;}
+    .banner-description{
+      text-align: center;
     }
-  
+    .banner-heading{
+      font-size: 2rem;
+    }}
+    /* .banner-img{
+     
+    }
+   */
