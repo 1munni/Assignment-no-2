@@ -66,7 +66,7 @@ color:  var(--secondary-color);
   }
 .manu-icon{
   color: var(--dark1)
-  font-size: 30px;
+  font-size: 1.5rem;
 }
   .btn-1{
     background-color: var(--primary-color);
@@ -207,7 +207,10 @@ color:  var(--secondary-color);
 /* stories style */
 
 .stories{
-  background-image: url(../assets/bg.png);
+  background: linear-gradient(180deg, rgb(246, 239, 239) 20.884%,
+rgba(251, 211, 7, 0.941) 300.034%), url("../assets/bg.png");
+ 
+  /* background: linear-gradient(180deg, 0%, #FEA301, 100%),( 100%, #ffffff, 100%); */
   margin: 20px auto;
 }
 .stories-section{
@@ -327,7 +330,7 @@ color:  var(--secondary-color);
     border: none;
     border-radius: 20px;
     padding:10px 30px;
-   margin-top: 60px;
+   margin: 60px;
   }
   .btn-stories:hover{background-color: var(--secondary-color);
     color: var(--dark1);}
@@ -337,7 +340,8 @@ color:  var(--secondary-color);
     .school-text,
     .nav-design,
     .contact-btn,
-    .arrow{
+    .arrow,
+    .big-image{
       display: none;
     }
     .manu-icon{
@@ -364,5 +368,11 @@ margin: 20px;}
     }
     .curriculum-title{
       text-align: center;
-    }}
-  
+    }
+    .square-collage{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+     gap: 0px;
+    }
+  }
+    
