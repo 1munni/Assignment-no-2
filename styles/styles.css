@@ -209,9 +209,7 @@ color:  var(--secondary-color);
 .stories{
   background: linear-gradient(180deg, rgb(246, 239, 239) 20.884%,
 rgba(251, 211, 7, 0.941) 300.034%), url("../assets/bg.png");
- 
-  /* background: linear-gradient(180deg, 0%, #FEA301, 100%),( 100%, #ffffff, 100%); */
-  margin: 20px auto;
+  margin: 0 auto;
 }
 .stories-section{
   margin-top: 10px;
@@ -330,10 +328,67 @@ rgba(251, 211, 7, 0.941) 300.034%), url("../assets/bg.png");
     border: none;
     border-radius: 20px;
     padding:10px 30px;
-   margin: 60px;
+   margin: 60px
   }
   .btn-stories:hover{background-color: var(--secondary-color);
     color: var(--dark1);}
+    /* footer design style */
+    .footer-section{
+      background-color: var(--forth-color);
+      height: 350px;
+      width: auto;
+      margin: 0 auto;
+    }
+    .foot-design{
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0, auto;
+      padding: 50px;
+    }
+    .kids-edu h3{
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--fifth-color);
+    }
+    .kids-edu p{
+      font-size: 1.25rem;
+      font-weight: 400;
+      text-align: left;
+      margin: 20px auto;
+      color: var(--fifth-color);
+    }
+    .logo{
+      gap: 20px;
+    }
+    about-school{
+      color: var(--fifth-color);
+    }
+    .about-school h4{
+      font-weight: bold;
+      color: var(--fifth-color);
+      margin: 20px auto;
+     
+    }
+    .about-school ul a{
+      color: var(--fifth-color);
+      text-decoration: none;
+     
+    }
+    .about-school ul li{ 
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    .icon-bar h4{
+      color: var(--fifth-color);
+      font-weight: 700;
+      font-size: 1.5rem;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .icon-bar{
+    
+      padding-bottom: 0dvb;
+    }
 
   /* responsive style */
   @media screen and (max-width:576px){
@@ -373,6 +428,7 @@ margin: 20px;}
       display: grid;
       grid-template-columns: repeat(1, 1fr);
      gap: 0px;
+     margin: 0 auto;
     }
   }
     
