@@ -212,7 +212,6 @@ rgba(251, 211, 7, 0.941) 300.034%), */
 background-position: cover;
 position: relative;
 margin: 0 auto;
-opacity: 50%;
 }
 
 .stories-section{
@@ -433,11 +432,15 @@ margin: 20px;}
       align-items: center;
       justify-content: center;
     }
+    .stories{
+      width: 500px;
+      margin: 0;
+    }
     .square-collage{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
      gap: 0px;
-     margin: 0 auto;
+     margin: 0;
     }
 /* footer styles */
 .foot-design{
