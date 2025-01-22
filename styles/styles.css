@@ -205,12 +205,16 @@ color:  var(--secondary-color);
   color: var(--fifth-color);
 }
 /* stories style */
-
+/* linear-gradient(180deg, rgb(246, 239, 239) 20.884%,
+rgba(251, 211, 7, 0.941) 300.034%), */
 .stories{
-  background: linear-gradient(180deg, rgb(246, 239, 239) 20.884%,
-rgba(251, 211, 7, 0.941) 300.034%), url("../assets/bg.png");
-  margin: 0 auto;
+  background: linear-gradient(#ffffff, #fff4dc, #FFF4DC); url("../assets/bg.png");
+background-position: cover;
+position: relative;
+margin: 0 auto;
+opacity: 50%;
 }
+
 .stories-section{
   margin-top: 10px;
 }
